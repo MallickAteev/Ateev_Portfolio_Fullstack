@@ -1,0 +1,96 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Glassmorphism effect */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  
+  /* Shadow and transitions */
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    0 4px 16px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  opacity: 1;
+  
+  /* Icon color */
+  color: rgba(0, 87, 54, 0.9);
+}
+
+.scroll-to-top:hover {
+  transform: translateY(-3px);
+  background: rgba(6, 136, 212, 0.25);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  color: rgba(6, 136, 212, 1);
+  
+  box-shadow: 
+    0 12px 40px rgba(6, 136, 212, 0.2),
+    0 8px 20px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.scroll-to-top:active,
+.scroll-to-top.clicked {
+  transform: translateY(-1px) scale(0.95);
+  background: rgba(0, 87, 54, 0.3);
+  color: rgba(0, 87, 54, 1);
+  
+  box-shadow: 
+    0 4px 16px rgba(0, 87, 54, 0.3),
+    0 2px 8px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Smooth entrance animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-to-top {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+/* Focus styles for accessibility */
+.scroll-to-top:focus {
+  outline: none;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    0 4px 16px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    0 0 0 3px rgba(6, 136, 212, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .scroll-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+}

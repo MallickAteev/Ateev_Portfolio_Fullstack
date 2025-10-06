@@ -1,0 +1,29 @@
+.footer-section {
+  background: #ffffff;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 0rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  color: #4b5563;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #d6b4b4;
+}
+
+.footer-section p {
+  color: #6b7280;
+  font-size: 0.95rem;
+}

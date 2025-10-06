@@ -1,0 +1,66 @@
+.projects-section {
+  padding: 2rem 2rem;
+  background-color: #f9f9ff;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #1f8eb0;
+}
+
+/* Flex layout for cards */
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-card {
+  background: rgb(255, 255, 255);
+  margin: 1.5rem;
+  border-radius: 12px;
+  padding: 3rem;
+  max-width: 600px;
+  flex: 2 1 350px;
+  box-shadow: 0 8px 20px rgba(20, 225, 215, 0.907);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0077b6;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.tech-stack {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-stack li {
+  background-color: #e0f0ff;
+  color: #005c99;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
