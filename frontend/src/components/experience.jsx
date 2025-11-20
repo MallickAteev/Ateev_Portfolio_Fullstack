@@ -1,6 +1,6 @@
 // src/components/Experience.jsx
 import React from 'react';
-import './Experience.css';
+import './experience.css';
 
 const Experience = () => {
   return (
