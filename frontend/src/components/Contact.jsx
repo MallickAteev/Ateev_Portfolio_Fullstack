@@ -32,14 +32,14 @@ const Contact = () => {
     console.log('  - name:', `"${formData.name}"`, '(length:', formData.name.length, ')');
     console.log('  - email:', `"${formData.email}"`, '(length:', formData.email.length, ')');
     console.log('  - message:', `"${formData.message}"`, '(length:', formData.message.length, ')');
-    console.log('🌐 Sending to: https://ateev-portfolio-fullstack.onrender.com');
+    console.log('🌐 Sending to: https://ateev-portfolio-fullstack.onrender.com/api/contact/submit');
 
     try {
-      const response = await axios.post('https://ateev-portfolio-fullstack.onrender.com', formData, {
+      const response = await axios.post('https://ateev-portfolio-fullstack.onrender.com/api/contact/submit', formData, {
         headers: {
           'Content-Type': 'application/json',
         },
-        timeout: 15000 // 15 second timeout for email sending
+        timeout: 60000 // 15 second timeout for email sending
       });
       
       console.log('✅ === BACKEND RESPONSE RECEIVED ===');
