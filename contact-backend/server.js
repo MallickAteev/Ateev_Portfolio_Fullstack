@@ -173,3 +173,9 @@ app.listen(PORT, () => {
   // Test email connection
   testEmailConnection();
 });
+const cors = require("cors");
+app.use(cors({
+  origin: "https://ateevmallick.netlify.app",
+  methods: "GET,POST",
+  allowedHeaders: "Content-Type"
+}));
