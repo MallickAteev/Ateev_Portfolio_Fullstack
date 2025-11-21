@@ -32,10 +32,10 @@ const Contact = () => {
     console.log('  - name:', `"${formData.name}"`, '(length:', formData.name.length, ')');
     console.log('  - email:', `"${formData.email}"`, '(length:', formData.email.length, ')');
     console.log('  - message:', `"${formData.message}"`, '(length:', formData.message.length, ')');
-    console.log('🌐 Sending to: http://localhost:5000/api/contact');
+    console.log('🌐 Sending to: https://ateev-portfolio-fullstack.onrender.com');
 
     try {
-      const response = await axios.post('http://localhost:5000/api/contact', formData, {
+      const response = await axios.post('https://ateev-portfolio-fullstack.onrender.com', formData, {
         headers: {
           'Content-Type': 'application/json',
         },
