@@ -42,7 +42,7 @@ const createTransporter = () => {
   console.log('📧 Using email:', process.env.EMAIL_USER);
   console.log('🔑 Password exists:', !!process.env.EMAIL_PASS);
   
-  return nodemailer.createTransporter({
+  return nodemailer.createTransport({
     service: 'gmail',
     host: 'smtp.gmail.com',
     port: 587,
