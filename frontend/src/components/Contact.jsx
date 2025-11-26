@@ -39,7 +39,7 @@ const Contact = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        timeout: 15000 // 15 second timeout for email sending
+        timeout: 65000 // 15 second timeout for email sending
       });
       
       console.log('✅ === BACKEND RESPONSE RECEIVED ===');
