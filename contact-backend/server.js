@@ -14,7 +14,7 @@ app.use(cors({
 app.use(express.json());
 
 // ==== EMAIL TRANSPORTER (GLOBAL) ====
-const transporter = nodemailer.createTransport({
+/*const transporter = nodemailer.createTransport({
   service: 'gmail',
   host: 'smtp.gmail.com',
   port: 587,
@@ -24,7 +24,7 @@ const transporter = nodemailer.createTransport({
     pass: process.env.EMAIL_PASS
   }
 });
-module.exports.transporter = transporter;
+module.exports.transporter = transporter;*/
 
 // ==== ROUTES ====
 const contactRoutes = require('./routes/contact');
