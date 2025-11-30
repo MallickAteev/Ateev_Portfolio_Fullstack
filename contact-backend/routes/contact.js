@@ -49,7 +49,7 @@ async function sendEmailNotification(contact) {
       port: 465, // Explicitly use the secure port
       secure: true, // Use SSL/TLS
       options: {
-        connectionTimeout: 30000 // Give 30s for the initial connection
+        connectionTimeout: 60000 // Give 30s for the initial connection
       },
       auth: {
         type: 'OAuth2',
